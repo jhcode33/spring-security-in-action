@@ -38,6 +38,7 @@ import java.util.UUID;
 @Configuration
 public class SecurityConfig {
 
+    // securityFilterChain 구성
     @Bean
     @Order(1)
     public SecurityFilterChain asFilterChain(HttpSecurity http) throws Exception {
