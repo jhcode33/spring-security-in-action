@@ -67,6 +67,7 @@ public class SecurityConfig {
         return http.build();
     }
 
+    // userDetails를 임시로 구현함, 원래는 interface를 구현
     @Bean
     public UserDetailsService userDetailsService() {
         UserDetails userDetails = User.withUsername("bill")
